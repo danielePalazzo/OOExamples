@@ -4,18 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6040614-4f2b-4b0a-bd83-ab0940ad69c3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OOExamples.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bank/ApplicationStart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bank/model/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bank/model/CaymanAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bank/model/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bank/model/special/SpecialAccount.java" afterDir="false" />
+    <list default="true" id="a6040614-4f2b-4b0a-bd83-ab0940ad69c3" name="Changes" comment="add client class">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bank/ApplicationStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/ApplicationStart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bank/model/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/model/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bank/model/CaymanAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/model/CaymanAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bank/model/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/model/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bank/model/special/SpecialAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/model/special/SpecialAccount.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +55,30 @@
       <option name="presentableId" value="Default" />
       <updated>1675761711539</updated>
     </task>
+    <task id="LOCAL-00001" summary="add client class">
+      <created>1675874048038</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1675874048038</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add client class" />
+    <option name="LAST_COMMIT_MESSAGE" value="add client class" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

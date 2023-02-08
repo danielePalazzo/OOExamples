@@ -1,6 +1,7 @@
 package bank;
 import bank.model.Account;
 import bank.model.CaymanAccount;
+import bank.model.Client;
 import bank.model.special.SpecialAccount;
 
 import java.sql.SQLOutput;
@@ -25,16 +26,19 @@ public class ApplicationStart {
 //        System.out.println(a1.balance);
         System.out.println(a1.getBalance());
 
-        Account a2 = new Account(2500, LocalDate.of(2023, 1, 20), "Piero Rossi");
+        Client client = new Client(1, "Giuseppe", "Servero", LocalDate.now(), 'm');
+
+        Account a2 = new Account(2500, LocalDate.now(), client);
+
         CaymanAccount ca = new CaymanAccount();
 //        System.out.println("Cayman: " + ca.balance);
         ca.deposit(10000);
         ca.evadeTax();
 
-        SpecialAccount sa1 = new SpecialAccount(100000, LocalDate.now(), "Persona");
+        SpecialAccount sa1 = new SpecialAccount(100000, LocalDate.now(), client);
         sa1.setBalance(1000); // metodo nella classe madre
 
-        Account a3 = new SpecialAccount(100000, LocalDate.now(), "Persona3");
+        Account a3 = new SpecialAccount(100000, LocalDate.now(), client);
 //        Date x1 = new Date();
         Account acs[] = new Account[10];
 //
@@ -51,8 +55,8 @@ public class ApplicationStart {
     }
 
     public static void handleAccount(Account x){
-        String clientName = x.getClient();
-        if(clientName != null && clientName.length() > 10 && clientName.startsWith("sa")){
+        Client clientName = x.getClient();
+        if(clientName != null && clientName.getName().length() > 10 && clientName.getName().startsWith("sa")){
             x.deposit(10);
         }
     }

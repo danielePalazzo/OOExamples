@@ -9,7 +9,7 @@ public class CaymanAccount extends Account{
         super();
     }
 
-    public CaymanAccount(double bal, LocalDate od, String cn, String secretCode){
+    public CaymanAccount(double bal, LocalDate od, Client cn, String secretCode){
         super(bal, od, cn); // invoco il costruttore della classe madre per inizializzare le sue variabili
         this.secretCode = secretCode;
     }

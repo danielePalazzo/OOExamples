@@ -4,26 +4,23 @@ import java.time.LocalDate;
 public class Account {
     protected double balance;
     private final LocalDate openDate;
-    private String client;
+    private Client client;
 
     public Account(){
         balance = 1000;
         openDate = LocalDate.now();
-        client = "Anonimo";
+        this.client = getClient();
     }
 
-    public Account(double balance, LocalDate openDate, String client){
+    public Account(double balance, LocalDate openDate, Client client){
         this.balance = balance;
         this.openDate = openDate;
         this.client = client;
     }
 
-    public Account(double balance, LocalDate openDate){
-        this(balance, openDate, "Anonimo"); // costruttore riga 15, fa le stesse cose delle istruzioni sotto
-        /*balance = c;
-        openDate = locD;
-        client = "Anonimo";*/
-    }
+//    public Account(double balance, LocalDate openDate){
+//        this(balance, openDate, "Anonimo"); // costruttore riga 15, fa le stesse cose delle istruzioni sotto
+//    }
 
     public double getBalance(){
         return balance;
@@ -37,11 +34,11 @@ public class Account {
         return openDate;
     }
 
-    public String getClient(){
+    public Client getClient(){
         return client;
     }
 
-    public void setClient(String client){
+    public void setClient(Client client){
         this.client = client;
     }
 

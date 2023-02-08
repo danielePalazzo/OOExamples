@@ -11,6 +11,18 @@ public class Client {
     private LocalDate birthDate;
     private char sex;
 
+    public Client(long id, String name, String lastName, LocalDate birthDate, char sex){
+        this.id = id;
+        this.name = name;
+        this.lastName = lastName;
+        this.birthDate = birthDate;
+        this.sex = sex;
+    }
+
+    public String getName(){
+        return name;
+    }
+
     public String getFullName(){
         return name + " " + lastName;
     }
