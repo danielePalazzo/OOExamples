@@ -6,11 +6,11 @@ public abstract class Account {
     private final LocalDate openDate;
     private Client client;
 
-    /*public Account(){
+    public Account(){
         balance = 1000;
         openDate = LocalDate.now();
         this.client = getClient();
-    }*/
+    }
 
     public Account(double balance, LocalDate openDate, Client client){
         this.balance = balance;

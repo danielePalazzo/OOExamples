@@ -5,6 +5,10 @@ import java.time.LocalDate;
 public class CaymanAccount extends Account{
     private String secretCode;
 
+    public CaymanAccount(){
+
+    }
+
     public CaymanAccount(double balance, LocalDate openDate, Client client){
         super(balance, openDate, client);
     }
