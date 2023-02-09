@@ -5,8 +5,8 @@ import java.time.LocalDate;
 public class CaymanAccount extends Account{
     private String secretCode;
 
-    public CaymanAccount(){
-        super();
+    public CaymanAccount(double balance, LocalDate openDate, Client client){
+        super(balance, openDate, client);
     }
 
     public CaymanAccount(double bal, LocalDate od, Client cn, String secretCode){
@@ -17,5 +17,11 @@ public class CaymanAccount extends Account{
     public double evadeTax(){
         deposit(1000);
         return 0;
+    }
+
+    @Override // annotazione (questa è di compile time e non spunta nel bytecode) - vengono lette dal compilatore
+    public double deposit(double amount){
+        balance = amount + 1.1;
+        return balance;  // il ritorno nell'override deve essere uguale al metodo originale
     }
 }

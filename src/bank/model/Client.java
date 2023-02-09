@@ -4,7 +4,7 @@ import java.time.LocalDate;
 import java.time.Period;
 import java.time.temporal.ChronoUnit;
 
-public class Client {
+public class Client{
     private long id;
     private String name;
     private String lastName;
@@ -19,8 +19,20 @@ public class Client {
         this.sex = sex;
     }
 
+    public void setName(String name){
+        this.name = name;
+    }
+
+    public void setLastName(String lastName){
+        this.lastName = lastName;
+    }
+
     public String getName(){
         return name;
+    }
+
+    public String getLastName(){
+        return lastName;
     }
 
     public String getFullName(){
@@ -32,6 +44,10 @@ public class Client {
 //        sb.append(" ");
 //        sb.append(lastName);
         return sb.toString();
+    }
+
+    public LocalDate getBirthDate(){
+        return birthDate;
     }
 
     public int getAge(){

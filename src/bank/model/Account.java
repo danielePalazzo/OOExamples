@@ -1,16 +1,16 @@
 package bank.model;
 import java.time.LocalDate;
 
-public class Account {
+public abstract class Account {
     protected double balance;
     private final LocalDate openDate;
     private Client client;
 
-    public Account(){
+    /*public Account(){
         balance = 1000;
         openDate = LocalDate.now();
         this.client = getClient();
-    }
+    }*/
 
     public Account(double balance, LocalDate openDate, Client client){
         this.balance = balance;
@@ -27,7 +27,7 @@ public class Account {
     }
 
     public void setBalance(double amount){
-        this.balance = amount*100;
+        this.balance = amount * 100;
     }
 
     public LocalDate getOpenDate(){
@@ -42,10 +42,7 @@ public class Account {
         this.client = client;
     }
 
-    public double deposit(double amount){
-        this.balance += amount;
-        return balance;
-    }
+    public abstract double deposit(double amount); // solo una classe astratta può avere metodi astratti
 
     // Method overload
     // Method signature: nome metodo + lista parametri
