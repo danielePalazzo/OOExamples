@@ -14,8 +14,8 @@ public class Office {
             }
         }
 
-        for (Person p : workers){ // per ogni persona p all'interno della sequenza workers
+        /*for (Person p : workers){ // per ogni persona p all'interno della sequenza workers
             p.speak();
-        }
+        }*/
     }
 }

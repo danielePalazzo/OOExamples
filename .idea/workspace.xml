@@ -4,15 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6040614-4f2b-4b0a-bd83-ab0940ad69c3" name="Changes" comment="crea esempi classi astratte">
-      <change afterPath="$PROJECT_DIR$/src/bank/model/softwareHouse/ApplicationStart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bank/model/softwareHouse/Developer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bank/model/softwareHouse/Office.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bank/model/softwareHouse/ScrumMaster.java" afterDir="false" />
+    <list default="true" id="a6040614-4f2b-4b0a-bd83-ab0940ad69c3" name="Changes" comment="aggiunge progetto software house">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bank/model/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/model/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bank/model/CaymanAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/model/CaymanAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bank/model/softwareHouse/ApplicationStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/model/softwareHouse/ApplicationStart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bank/model/softwareHouse/Developer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/model/softwareHouse/Developer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bank/model/softwareHouse/Office.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/model/softwareHouse/Office.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/bank/model/softwareHouse/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/model/softwareHouse/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bank/model/softwareHouse/ScrumMaster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/model/softwareHouse/ScrumMaster.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +75,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675938054218</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="aggiunge progetto software house">
+      <created>1675944350950</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1675944350950</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -94,7 +99,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add client class" />
     <MESSAGE value="crea esempi classi astratte" />
-    <option name="LAST_COMMIT_MESSAGE" value="crea esempi classi astratte" />
+    <MESSAGE value="aggiunge progetto software house" />
+    <option name="LAST_COMMIT_MESSAGE" value="aggiunge progetto software house" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

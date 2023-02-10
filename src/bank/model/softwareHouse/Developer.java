@@ -11,6 +11,10 @@ public class Developer extends Person{
         this.favouriteLanguage = favouriteLanguage;
     }
 
+    public void setName(String name){
+        this.firstName = name;
+    }
+
     @Override
     public void work() {
         System.out.println("Penso penso penso...");

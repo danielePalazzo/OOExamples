@@ -33,6 +33,14 @@ public abstract class Person {
         }
     }
 
+    public String getName(){
+        return this.firstName;
+    }
+
+    public String getFullName(){
+        return String.format("%s %s", firstName, lastName);
+    }
+
     public abstract void work();
 
     public void sleep(){
