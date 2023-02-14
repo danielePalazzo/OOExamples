@@ -21,6 +21,17 @@ public class ScrumMaster extends Person{
         this.levelOfPatience = levelOfPatience;
         this.team = new ArrayList<>();
         this.MAX_TEAM_SIZE = teamSize;
+        this.generator = new Random();
+    }
+
+    public ScrumMaster(String firstName, String lastName, LocalDate birthDate, char sex, int yearsOfExperience,
+                       int levelOfPatience, int teamSize, ArrayList<Developer> team){
+        super(firstName, lastName, birthDate, sex);
+        this.yearsOfExperience = yearsOfExperience;
+        this.levelOfPatience = levelOfPatience;
+        this.team = team;
+        this.MAX_TEAM_SIZE = teamSize;
+        this.generator = new Random();
     }
 
     @Override
@@ -71,12 +82,42 @@ public class ScrumMaster extends Person{
         }
     }
 
-    //team.add(d); // aggiunge il parametro all'array list
     public boolean addTeamMember(Developer d){
         if (team.size() < MAX_TEAM_SIZE){
-            team.add(d);
+            team.add(d); // aggiunge il parametro all'array list
             return true;
         }
         return false;
+    }
+
+    // true più maschi, altrimenti false
+    public boolean hasMoreMales(){
+        int males = 0;
+        int females = 0;
+        for (Developer d : team){
+            if (d.isMale()){
+                males++;
+            } else{
+                females++;
+            }
+        }
+//        if (males > females){
+//            return true;
+//        }
+        return males > females;
+    }
+
+    public int countJavaDevelopers(){
+        return countLanguageDevelopers("Java");
+    }
+
+    public int countLanguageDevelopers(String language){
+        int count = 0;
+        for (Developer d : team){
+            if(d.getFavouriteLanguage().equalsIgnoreCase(language)){
+                count++;
+            }
+        }
+        return count;
     }
 }

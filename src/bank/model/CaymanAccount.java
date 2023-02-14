@@ -10,11 +10,11 @@ public class CaymanAccount extends Account{
     }
 
     public CaymanAccount(double balance, LocalDate openDate, Client client){
-        super(balance, openDate, client);
+        //super(balance, openDate, client);
     }
 
     public CaymanAccount(double bal, LocalDate od, Client cn, String secretCode){
-        super(bal, od, cn); // invoco il costruttore della classe madre per inizializzare le sue variabili
+        //super(bal, od, cn); // invoco il costruttore della classe madre per inizializzare le sue variabili
         this.secretCode = secretCode;
     }
 

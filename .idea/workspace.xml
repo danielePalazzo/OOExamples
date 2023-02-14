@@ -4,13 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6040614-4f2b-4b0a-bd83-ab0940ad69c3" name="Changes" comment="aggiunge progetto software house">
+    <list default="true" id="a6040614-4f2b-4b0a-bd83-ab0940ad69c3" name="Changes" comment="aggiunge array list">
+      <change afterPath="$PROJECT_DIR$/src/bank/model/BalanceException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bank/model/softwareHouse/ApplicationStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/model/softwareHouse/ApplicationStart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bank/ApplicationStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/ApplicationStart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bank/model/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/model/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bank/model/CaymanAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/model/CaymanAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bank/model/GoldAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/model/GoldAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bank/model/SmartAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/model/SmartAccount.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/bank/model/softwareHouse/Developer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/model/softwareHouse/Developer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/bank/model/softwareHouse/Office.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/model/softwareHouse/Office.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bank/model/softwareHouse/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/model/softwareHouse/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/bank/model/softwareHouse/ScrumMaster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/model/softwareHouse/ScrumMaster.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bank/model/special/SpecialAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/model/special/SpecialAccount.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +47,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Dev/Java/Projects/javaBase/Negozio&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
@@ -82,7 +88,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675944350950</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="aggiunge array list">
+      <created>1676035361291</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1676035361291</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -100,7 +113,8 @@
     <MESSAGE value="add client class" />
     <MESSAGE value="crea esempi classi astratte" />
     <MESSAGE value="aggiunge progetto software house" />
-    <option name="LAST_COMMIT_MESSAGE" value="aggiunge progetto software house" />
+    <MESSAGE value="aggiunge array list" />
+    <option name="LAST_COMMIT_MESSAGE" value="aggiunge array list" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

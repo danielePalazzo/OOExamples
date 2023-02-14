@@ -15,6 +15,10 @@ public class Developer extends Person{
         this.firstName = name;
     }
 
+    public char getSex(){
+        return this.sex;
+    }
+
     @Override
     public void work() {
         System.out.println("Penso penso penso...");

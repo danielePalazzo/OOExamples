@@ -1,18 +1,18 @@
 package bank.model;
 import java.time.LocalDate;
 
-public abstract class Account {
-    protected double balance;
-    private final LocalDate openDate;
-    private Client client;
+public class Account {
+    public double balance;
+    public final LocalDate openDate;
+    public String client;
 
     public Account(){
-        balance = 1000;
+        balance = 0;
         openDate = LocalDate.now();
-        this.client = getClient();
+        //this.client = getClient();
     }
 
-    public Account(double balance, LocalDate openDate, Client client){
+    public Account(double balance, LocalDate openDate, String client){
         this.balance = balance;
         this.openDate = openDate;
         this.client = client;
@@ -34,27 +34,31 @@ public abstract class Account {
         return openDate;
     }
 
-    public Client getClient(){
+    public String getClient(){
         return client;
     }
 
-    public void setClient(Client client){
+    public void setClient(String client){
         this.client = client;
     }
 
-    public abstract double deposit(double amount); // solo una classe astratta può avere metodi astratti
+    //public abstract double deposit(double amount); // solo una classe astratta può avere metodi astratti
 
     // Method overload
     // Method signature: nome metodo + lista parametri
-    public double deposit(double amount, double extra){
+    public double deposit(double amount){
         balance += amount;
-        balance += extra / 2;
-
         return balance;
     }
 
-    public double withDraw(double amount){
-        balance -= amount;
-        return balance;
+    public double withDraw(double amount) throws BalanceException{  // è obbligatorio specificare se un metodo lancia un'eccezione
+        if(balance >= amount){
+            balance -= amount;
+            return balance;
+        }
+        //IllegalArgumentException e = new IllegalArgumentException("Tentativo di ritiro superiore al saldo");
+        BalanceException b = new BalanceException(balance, amount,
+                String.format("Tentativo di ritiro superiore al saldo. Sforamento di %f", amount - balance));
+        throw b;
     }
 }

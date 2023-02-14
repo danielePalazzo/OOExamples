@@ -5,7 +5,7 @@ import java.time.LocalDate;
 public class SmartAccount extends Account {
     private int counter;
 
-    public SmartAccount(double balance, LocalDate openDate, Client client){
+    public SmartAccount(double balance, LocalDate openDate, String client){
         super(balance, openDate, client);
     }
 

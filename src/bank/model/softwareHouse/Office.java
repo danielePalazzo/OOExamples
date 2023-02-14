@@ -1,6 +1,6 @@
 package bank.model.softwareHouse;
 
-public class Office {
+public class Office{
     private Person workers[];
 
     public Office(Person workers[]){

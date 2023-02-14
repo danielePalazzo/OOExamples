@@ -9,7 +9,7 @@ import java.util.Random;
 public class SpecialAccount extends Account{
     private Random random = new Random();
 
-    public SpecialAccount(double balance, LocalDate openDate, Client client){
+    public SpecialAccount(double balance, LocalDate openDate, String client){
         super(balance, openDate, client);
     }
 
